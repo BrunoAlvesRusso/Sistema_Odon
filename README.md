@@ -7,3 +7,6 @@ Sitema de gerenciamento odontológico
 -Banco de dados: Firebird
 
 -Desenvolvido por Bruno Russo
+
+
+Última release: 2020
