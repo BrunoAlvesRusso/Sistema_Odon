@@ -1,0 +1,53 @@
+
+CREATE GENERATOR GEN_FOT00_ID;
+
+CREATE TABLE FOT00 (
+    INDICE      INTEGER NOT NULL,
+    IMAGEM      BLOB SUB_TYPE 0 SEGMENT SIZE 80,
+    NU_CLIENTE  INTEGER
+);
+
+
+
+
+/******************************************************************************/
+/***                              Primary Keys                              ***/
+/******************************************************************************/
+
+ALTER TABLE FOT00 ADD CONSTRAINT PK_FOT00 PRIMARY KEY (INDICE);
+
+
+/******************************************************************************/
+/***                              Foreign Keys                              ***/
+/******************************************************************************/
+
+ALTER TABLE FOT00 ADD CONSTRAINT FK_FOT00_1 FOREIGN KEY (NU_CLIENTE) REFERENCES CLI00 (INDICE);
+
+
+/******************************************************************************/
+/***                                Triggers                                ***/
+/******************************************************************************/
+
+
+SET TERM ^ ;
+
+
+
+/******************************************************************************/
+/***                          Triggers for tables                           ***/
+/******************************************************************************/
+
+
+
+/* Trigger: FOT00_BI */
+CREATE OR ALTER TRIGGER FOT00_BI FOR FOT00
+ACTIVE BEFORE INSERT POSITION 0
+as
+begin
+  if (new.indice is null) then
+    new.indice = gen_id(gen_fot00_id,1);
+end
+^
+
+
+SET TERM ; ^

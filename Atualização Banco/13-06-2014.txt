@@ -1,0 +1,45 @@
+CREATE GENERATOR GEN_PCT00_ID;
+
+CREATE TABLE PCT00 (
+    INDICE        INTEGER NOT NULL,
+    PROCEDIMENTO  VARCHAR(100),
+    DESCRICAO     VARCHAR(200)
+);
+
+
+
+
+/******************************************************************************/
+/***                              Primary Keys                              ***/
+/******************************************************************************/
+
+ALTER TABLE PCT00 ADD CONSTRAINT PK_PCT00 PRIMARY KEY (INDICE);
+
+
+/******************************************************************************/
+/***                                Triggers                                ***/
+/******************************************************************************/
+
+
+SET TERM ^ ;
+
+
+
+/******************************************************************************/
+/***                          Triggers for tables                           ***/
+/******************************************************************************/
+
+
+
+/* Trigger: PCT00_BI */
+CREATE OR ALTER TRIGGER PCT00_BI FOR PCT00
+ACTIVE BEFORE INSERT POSITION 0
+as
+begin
+  if (new.indice is null) then
+    new.indice = gen_id(gen_pct00_id,1);
+end
+^
+
+
+SET TERM ; ^

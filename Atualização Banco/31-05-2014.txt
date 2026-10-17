@@ -1,0 +1,82 @@
+
+CREATE GENERATOR GEN_ODO01_ID;
+
+CREATE TABLE ODO01 (
+    INDICE      INTEGER NOT NULL,
+    NU_CLIENTE  INTEGER,
+    COR1        VARCHAR(50),
+    DESC1       INTEGER,
+    COR2        VARCHAR(50),
+    DESC2       INTEGER,
+    COR3        VARCHAR(50),
+    DESC3       INTEGER,
+    COR4        VARCHAR(50),
+    DESC4       INTEGER,
+    COR5        VARCHAR(50),
+    DESC5       INTEGER,
+    COR6        VARCHAR(50),
+    DESC6       INTEGER,
+    COR7        VARCHAR(50),
+    DESC7       INTEGER,
+    COR8        VARCHAR(50),
+    DESC8       INTEGER,
+    COR9        VARCHAR(50),
+    DESC9       INTEGER,
+    COR10       VARCHAR(50),
+    DESC10      INTEGER,
+    COR11       VARCHAR(50),
+    DESC11      INTEGER,
+    COR12       VARCHAR(50),
+    DESC12      INTEGER,
+    COR13       VARCHAR(50),
+    DESC13      INTEGER,
+    COR14       VARCHAR(50),
+    DESC14      INTEGER,
+    COR15       VARCHAR(50),
+    DESC15      INTEGER
+);
+
+
+
+
+/******************************************************************************/
+/***                              Primary Keys                              ***/
+/******************************************************************************/
+
+ALTER TABLE ODO01 ADD CONSTRAINT PK_ODO01 PRIMARY KEY (INDICE);
+
+
+/******************************************************************************/
+/***                              Foreign Keys                              ***/
+/******************************************************************************/
+
+ALTER TABLE ODO01 ADD CONSTRAINT FK_ODO01_1 FOREIGN KEY (NU_CLIENTE) REFERENCES CLI00 (INDICE);
+
+
+/******************************************************************************/
+/***                                Triggers                                ***/
+/******************************************************************************/
+
+
+SET TERM ^ ;
+
+
+
+/******************************************************************************/
+/***                          Triggers for tables                           ***/
+/******************************************************************************/
+
+
+
+/* Trigger: ODO01_BI */
+CREATE OR ALTER TRIGGER ODO01_BI FOR ODO01
+ACTIVE BEFORE INSERT POSITION 0
+as
+begin
+  if (new.indice is null) then
+    new.indice = gen_id(gen_odo01_id,1);
+end
+^
+
+
+SET TERM ; ^
