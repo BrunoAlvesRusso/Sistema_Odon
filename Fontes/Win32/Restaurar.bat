@@ -1,0 +1,1 @@
+"C:\Program Files\Firebird\Firebird_2_0\bin\gbak.exe" -r -user SYSDBA -password masterkey C:\Sistema\Projeto\Backups\Backup_25112013_1509.fbk D:\Documentos\PROJETOS\Sistema\Evaldo\Projeto\Banco\Projeto.fdb
