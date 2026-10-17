@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41604,8144966435" ReportOptions.Description.Text="" ReportOptions.LastChange="42908,9345901273" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxAgenda" DataSetName="frxDBAgenda"/>
+    <item DataSet="frxGerenciador" DataSetName="frxDBGerenciador"/>
+  </Datasets>
+  <Variables>
+    <item Name=" Variáveis"/>
+    <item Name="Calendario"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Cliente" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="83,14966" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="311,70099" Top="26,45671" Width="94,48825" Height="30,23624" Font.Charset="1" Font.Color="0" Font.Height="-24" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Agenda"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="272,12616" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxAgenda" DataSetName="frxDBAgenda" RowCount="0">
+      <TfrxMemoView Name="frxDBAgendaSITUACAO" Left="551,81138" Top="0" Width="158,74026" Height="18,89765" DataField="SITUACAO" DataSet="frxAgenda" DataSetName="frxDBAgenda" Text="[frxDBAgenda.&#34;SITUACAO&#34;]"/>
+      <TfrxMemoView Name="frxDBAgendaCLIENTE" Left="108,60637" Top="0" Width="400,63018" Height="18,89765" DataField="CLIENTE" DataSet="frxAgenda" DataSetName="frxDBAgenda" Text="[frxDBAgenda.&#34;CLIENTE&#34;]"/>
+      <TfrxMemoView Name="frxDBAgendaHORA" Left="11,33859" Top="0" Width="79,37013" Height="18,89765" DataField="HORA" DataSet="frxAgenda" DataSetName="frxDBAgenda" Text="[frxDBAgenda.&#34;HORA&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="351,49629" Width="718,1107">
+      <TfrxGradientView Name="Gradient2" Left="0" Top="0" Width="718,1107" Height="18,89765" Style="gsVertical" Color="12632256"/>
+      <TfrxMemoView Name="Memo9" Left="15,11812" Top="1" Width="94,48825" Height="18,89765" Text="[Page]"/>
+      <TfrxMemoView Name="Memo10" Left="536,69326" Top="1" Width="177,63791" Height="18,89765" DisplayFormat.FormatStr="dd 'de' mmmm 'de' yyyy" DisplayFormat.Kind="fkDateTime" Text="[Date]"/>
+    </TfrxPageFooter>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="86,92919" Left="0" Top="162,51979" Width="718,1107">
+      <TfrxMemoView Name="Memo3" Left="310,92146" Top="0" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[Calendario]"/>
+      <TfrxGradientView Name="Gradient1" Left="0" Top="68,03154" Width="718,1107" Height="18,89765" Style="gsVertical" Color="12632256"/>
+      <TfrxMemoView Name="Memo2" Left="11,33859" Top="68,03154" Width="37,7953" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Hora"/>
+      <TfrxMemoView Name="Memo5" Left="109,31509" Top="68,03154" Width="52,91342" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Cliente"/>
+      <TfrxMemoView Name="Memo7" Left="550,5436" Top="68,03154" Width="60,47248" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Situação"/>
+      <TfrxMemoView Name="frxDBAgendaNOME" Left="11,33859" Top="41,57483" Width="574,48856" Height="18,89765" DataField="NOME" DataSet="frxAgenda" DataSetName="frxDBAgenda" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxDBAgenda.&#34;NOME&#34;]"/>
+    </TfrxHeader>
+  </TfrxReportPage>
+</TfrxReport>

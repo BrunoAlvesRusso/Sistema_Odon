@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41604,8144966435" ReportOptions.Description.Text="" ReportOptions.LastChange="42908,9391756713" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxAPagar" DataSetName="frxDBAPagar"/>
+    <item DataSet="frxFechaCaixa" DataSetName="frxDBFechaCaixa"/>
+    <item DataSet="frxGerenciador" DataSetName="frxDBGerenciador"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="Total"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Cliente" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="90,70872" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="161,74026" Top="30,23624" Width="396,85065" Height="30,23624" Font.Charset="1" Font.Color="0" Font.Height="-24" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Relatório de Fechamento de Caixa"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="211,65368" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxFechaCaixa" DataSetName="frxDBFechaCaixa" RowCount="0">
+      <TfrxMemoView Name="frxDBClienteNOME" Left="11,33859" Top="0" Width="317,48052" Height="18,89765" DataField="NOME" DataSet="frxFechaCaixa" DataSetName="frxDBFechaCaixa" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBFechaCaixa.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="frxDBClienteLOGRADOURO" Left="638,89023" Top="0" Width="71,81107" Height="18,89765" DataField="DATA" DataSet="frxFechaCaixa" DataSetName="frxDBFechaCaixa" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxDBFechaCaixa.&#34;DATA&#34;]"/>
+      <TfrxMemoView Name="frxDBClienteBAIRRO" Left="528,84292" Top="0" Width="98,26778" Height="18,89765" DataField="VALOR" DataSet="frxFechaCaixa" DataSetName="frxDBFechaCaixa" DisplayFormat.FormatStr="R$ ###,###,##0.00" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDBFechaCaixa.&#34;VALOR&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="341,93723" Top="0" Width="177,63791" Height="18,89765" DataField="NOME_1" DataSet="frxFechaCaixa" DataSetName="frxDBFechaCaixa" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBFechaCaixa.&#34;NOME_1&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="253,22851" Width="718,1107">
+      <TfrxGradientView Name="Gradient1" Left="0" Top="0" Width="718,1107" Height="18,89765" Style="gsVertical" Color="12632256"/>
+      <TfrxMemoView Name="Memo2" Left="11,33859" Top="0" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Nome Cliente"/>
+      <TfrxMemoView Name="Memo6" Left="530,40198" Top="0" Width="98,26778" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Valor Total"/>
+      <TfrxMemoView Name="Memo7" Left="637,66976" Top="0" Width="75,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Dt. Atendto"/>
+      <TfrxMemoView Name="Memo4" Left="341,93723" Top="0" Width="86,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Profissional"/>
+    </TfrxHeader>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="487,55937" Width="718,1107">
+      <TfrxGradientView Name="Gradient2" Left="0" Top="0" Width="718,1107" Height="18,89765" Style="gsVertical" Color="12632256"/>
+      <TfrxMemoView Name="Memo9" Left="15,11812" Top="1" Width="94,48825" Height="18,89765" Text="[Page]"/>
+      <TfrxMemoView Name="Memo10" Left="532,91373" Top="1" Width="177,63791" Height="18,89765" DisplayFormat.FormatStr="dd 'de' mmmm 'de' yyyy" DisplayFormat.Kind="fkDateTime" Text="[Date]"/>
+    </TfrxPageFooter>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="90,70872" Left="0" Top="336,37817" Width="718,1107">
+      <TfrxMemoView Name="Memo5" Left="449,76407" Top="41,57483" Width="249,44898" Height="18,89765" DisplayFormat.FormatStr="R$ ###,###,##0.00" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Total:[Total]"/>
+    </TfrxFooter>
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="294,80334" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxFechaCaixa" DataSetName="frxDBFechaCaixa" RowCount="0">
+      <TfrxMemoView Name="Memo8" Left="11,33859" Top="0" Width="317,48052" Height="18,89765" DataField="NOME_1" DataSet="frxFechaCaixa" DataSetName="frxDBFechaCaixa" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBFechaCaixa.&#34;NOME_1&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="638,89023" Top="0" Width="71,81107" Height="18,89765" DataField="DATA" DataSet="frxAPagar" DataSetName="frxDBAPagar" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[frxDBAPagar.&#34;DATA&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="528,84292" Top="0" Width="98,26778" Height="18,89765" DataField="VALOR" DataSet="frxAPagar" DataSetName="frxDBAPagar" DisplayFormat.FormatStr="R$ ###,###,##0.00" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frxDBAPagar.&#34;VALOR&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="341,93723" Top="0" Width="177,63791" Height="18,89765" DataField="NOME" DataSet="frxFechaCaixa" DataSetName="frxDBFechaCaixa" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxDBFechaCaixa.&#34;NOME&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="170,07885" Width="718,1107">
+      <TfrxGradientView Name="Gradient3" Left="0" Top="0" Width="718,1107" Height="18,89765" Style="gsVertical" Color="12632256"/>
+      <TfrxMemoView Name="Memo14" Left="11,33859" Top="0" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Nome Cliente"/>
+      <TfrxMemoView Name="Memo15" Left="530,40198" Top="0" Width="98,26778" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Valor Total"/>
+      <TfrxMemoView Name="Memo16" Left="637,66976" Top="0" Width="75,5906" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Dt. Atendto"/>
+      <TfrxMemoView Name="Memo17" Left="341,93723" Top="0" Width="86,92919" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Profissional"/>
+    </TfrxHeader>
+  </TfrxReportPage>
+</TfrxReport>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41604,8144966435" ReportOptions.Description.Text="" ReportOptions.LastChange="42908,9370418519" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxAPagar" DataSetName="frxDBAPagar"/>
+    <item DataSet="frxGerenciador" DataSetName="frxDBGerenciador"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Cliente" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="86,92919" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="229,7718" Top="26,45671" Width="260,78757" Height="30,23624" Font.Charset="1" Font.Color="0" Font.Height="-24" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Relatório de Despesas"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Height="18,89765" Left="0" ParentFont="False" Top="207,87415" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxAPagar" DataSetName="frxDBAPagar" RowCount="0">
+      <TfrxMemoView Name="frxDBClienteNOME" Left="11,33859" Top="0" Width="249,44898" Height="18,89765" DataField="DESCRICAO" DataSet="frxAPagar" DataSetName="frxDBAPagar" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBAPagar.&#34;DESCRICAO&#34;]"/>
+      <TfrxMemoView Name="frxDBClienteLOGRADOURO" Left="343,1342" Top="0" Width="71,81107" Height="18,89765" DataField="DT_VENCIMENTO" DataSet="frxAPagar" DataSetName="frxDBAPagar" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" WordWrap="False" Text="[frxDBAPagar.&#34;DT_VENCIMENTO&#34;]"/>
+      <TfrxMemoView Name="frxDBClienteBAIRRO" Left="266,64595" Top="0" Width="71,81107" Height="18,89765" DataField="VALOR" DataSet="frxAPagar" DataSetName="frxDBAPagar" DisplayFormat.FormatStr="R$ ###,###,##0.00" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" WordWrap="False" Text="[frxDBAPagar.&#34;VALOR&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="496,94527" Top="0" Width="79,37013" Height="18,89765" DataField="SITUACAO" DataSet="frxAPagar" DataSetName="frxDBAPagar" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" WordWrap="False" Text="[frxDBAPagar.&#34;SITUACAO&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="420,57514" Top="0" Width="71,81107" Height="18,89765" DataField="DT_PAGAMENTO" DataSet="frxAPagar" DataSetName="frxDBAPagar" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" WordWrap="False" Text="[frxDBAPagar.&#34;DT_PAGAMENTO&#34;]"/>
+      <TfrxMemoView Name="frxDBAPagarNOME" Left="582,04762" Top="0" Width="132,283549999999" Height="18,89765" DataField="NOME" DataSet="frxAPagar" DataSetName="frxDBAPagar" WordWrap="False" Text="[frxDBAPagar.&#34;NOME&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="166,29932" Width="718,1107">
+      <TfrxGradientView Name="Gradient1" Left="0" Top="0" Width="718,1107" Height="18,89765" Style="gsVertical" Color="12632256"/>
+      <TfrxMemoView Name="Memo2" Left="11,33859" Top="0" Width="71,81107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Descrição"/>
+      <TfrxMemoView Name="Memo6" Left="267,76407" Top="0" Width="68,03154" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Valor"/>
+      <TfrxMemoView Name="Memo7" Left="343,91373" Top="0" Width="71,81107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Dt. Vencto"/>
+      <TfrxMemoView Name="Memo4" Left="495,94527" Top="0" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Situação"/>
+      <TfrxMemoView Name="Memo15" Left="420,57514" Top="0" Width="71,81107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Dt. Pagto"/>
+      <TfrxMemoView Name="Memo5" Left="582,04762" Top="0" Width="79,37013" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Profissional"/>
+    </TfrxHeader>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="287,24428" Width="718,1107">
+      <TfrxGradientView Name="Gradient2" Left="0" Top="0" Width="718,1107" Height="18,89765" Style="gsVertical" Color="12632256"/>
+      <TfrxMemoView Name="Memo9" Left="15,11812" Top="1" Width="94,48825" Height="18,89765" Text="[Page]"/>
+      <TfrxMemoView Name="Memo10" Left="532,91373" Top="1" Width="177,63791" Height="18,89765" DisplayFormat.FormatStr="dd 'de' mmmm 'de' yyyy" DisplayFormat.Kind="fkDateTime" Text="[Date]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>
